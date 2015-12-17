@@ -36,7 +36,7 @@
 			<artifactId>logback-core</artifactId>
 			<version>${logback.version}</version>
 		</dependency>
-	
+
 		<!-- JUnit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -57,6 +57,22 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>com.javacodegeeks.examples.logbackmavenexample.App</mainClass>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 </project>
