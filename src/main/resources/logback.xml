@@ -25,7 +25,7 @@
         </rollingPolicy>
     </appender>
 
-    <logger name="xxxxxx" level="INFO" additivity="false">
+    <logger name="xxxxxx" level="DEBUG" additivity="false">
         <appender-ref ref="DUMMY_APPENDER"/>
     </logger>
 
